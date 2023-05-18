@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <div className='bg-cyan-200'>
-            <div className="navbar bg-cyan-200 container mx-auto">
+        <div className='bg-sky-300'>
+            <div className="navbar bg-sky-300 container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -14,7 +14,7 @@ const NavBar = () => {
                             <li><Link>Home</Link></li>
                             <li><Link>All Toys</Link></li>
                             <li><Link>My Toys</Link></li>
-                            <li><Link>Add a Toy</Link></li>
+                            <li><Link to='/add-a-toy'>Add a Toy</Link></li>
                             <li><Link>Blog</Link></li>
                         </ul>
                     </div>
@@ -25,7 +25,7 @@ const NavBar = () => {
                         <li><Link>Home</Link></li>
                         <li><Link>All Toys</Link></li>
                         <li><Link>My Toys</Link></li>
-                        <li><Link>Add a Toy</Link></li>
+                        <li><Link to='/add-a-toy'>Add a Toy</Link></li>
                         <li><Link>Blog</Link></li>
                     </ul>
                 </div>
