@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import './AddAToy.css'
+import Swal from 'sweetalert2';
 
 const AddAToy = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -13,13 +14,18 @@ const AddAToy = () => {
             },
             body: JSON.stringify(data)
         })
-        .then(res => res.json())
-        .then(data =>{
-            console.log(data);
-            if(data?.insertedId){
-                
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data?.insertedId) {
+                    Swal.fire(
+                        'Toy Added',
+                        'You Added a New Toy!',
+                        'success'
+                    )
+                    reset();
+                }
+            })
     };
 
 
