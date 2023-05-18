@@ -1,0 +1,123 @@
+[
+    {
+      "id": 11,
+      "img": "https://i.ibb.co/VM8RFyP/aqua-blaster.jpg",
+      "name": "Aqua Blaster Water Gun",
+      "seller": "Water Fun Toys",
+      "seller_email": "sales@waterfuntoys.com",
+      "subcategory": "water-toys",
+      "price": 14.99,
+      "rating": 4.5,
+      "quantity": 20,
+      "description": "The Aqua Blaster Water Gun is a high-powered water blaster that provides endless water fun. It has a large water capacity, easy-to-use pump action, and adjustable nozzle for different spray patterns."
+    },
+    {
+      "id": 12,
+      "img": "https://i.ibb.co/SrrVwTw/splash-Nslide.jpg",
+      "name": "Splash 'n Slide Inflatable Water Slide",
+      "seller": "Outdoor Adventures Ltd.",
+      "seller_email": "info@outdooradventures.com",
+      "subcategory": "water-toys",
+      "price": 79.99,
+      "rating": 4.3,
+      "quantity": 8,
+      "description": "The Splash 'n Slide Inflatable Water Slide is a thrilling water play experience for kids. It features a long slide, splash pool, and sprinkler system for continuous water fun. Suitable for ages 5-12."
+    },
+    {
+      "id": 13,
+      "img": "https://i.ibb.co/pjhcyLp/water-balloon-launcher.jpg",
+      "name": "Water Balloon Launcher",
+      "seller": "FunTime Toys",
+      "seller_email": "sales@funtimetoys.com",
+      "subcategory": "water-toys",
+      "price": 19.99,
+      "rating": 4.6,
+      "quantity": 15,
+      "description": "The Water Balloon Launcher is a powerful slingshot-style launcher for long-distance water balloon fights. It comes with a durable pouch and water balloons for hours of fun."
+    },
+    {
+      "id": 14,
+      "img": "https://i.ibb.co/WDPQwSy/dive-ring.jpg",
+      "name": "Underwater Dive Rings",
+      "seller": "Toyland Express",
+      "seller_email": "orders@toylandexpress.com",
+      "subcategory": "water-toys",
+      "price": 9.99,
+      "rating": 4.2,
+      "quantity": 25,
+      "description": "The Underwater Dive Rings are colorful diving toys that sink in water. They are great for pool games and underwater swimming practice. Each set includes four rings."
+    },
+    {
+      "id": 15,
+      "img": "https://i.ibb.co/y6Vgckd/splash-Nspray.jpg",
+      "name": "Splash 'n Spray Unicorn Sprinkler",
+      "seller": "Playful Pals Toys",
+      "seller_email": "info@playfulpalstoys.com",
+      "subcategory": "water-toys",
+      "price": 39.99,
+      "rating": 4.8,
+      "quantity": 5,
+      "description": "The Splash 'n Spray Unicorn Sprinkler is a delightful water toy that sprays water from its horn. It's easy to set up and provides hours of refreshing water play for kids."
+    },
+    {
+      "id": 16,
+      "img": "https://i.ibb.co/qskq4Xc/floating-water.jpg",
+      "name": "Floating Water Volleyball Set",
+      "seller": "SportsGear Pro",
+      "seller_email": "sales@sportsgearpro.com",
+      "subcategory": "water-toys",
+      "price": 49.99,
+      "rating": 4.4,
+      "quantity": 10,
+      "description": "The Floating Water Volleyball Set is a portable and inflatable volleyball net that can be used in pools or other water bodies. It comes with a volleyball and is suitable for all ages."
+    },
+    {
+      "id": 17,
+      "img": "https://i.ibb.co/ccWFqgH/water-rocket-launcher.jpg",
+      "name": "Water Rocket Launcher",
+      "seller": "Adventure Toys",
+      "seller_email": "contact@adventuretoys.com",
+      "subcategory": "water-toys",
+      "price": 24.99,
+      "rating": 4.7,
+      "quantity": 12,
+      "description": "The Water Rocket Launcher is a fun outdoor toy that uses water pressure to launch rockets into the sky. It provides an exciting STEM learning experience for children."
+    },
+    {
+      "id": 18,
+      "img": "https://i.ibb.co/DfVG0vG/swim-fin.jpg",
+      "name": "Mermaid Tail Swim Fin",
+      "seller": "KidsZone Toys",
+      "seller_email": "sales@kidszonetoys.com",
+      "subcategory": "water-toys",
+      "price": 29.99,
+      "rating": 4.5,
+      "quantity": 18,
+      "description": "The Mermaid Tail Swim Fin is a fin-shaped swimming aid that adds a touch of magic to swimming sessions. It is comfortable to wear and helps children improve their swimming skills."
+    },
+    {
+      "id": 19,
+      "img": "https://i.ibb.co/hVzW95d/water-wheel.jpg",
+      "name": "Inflatable Water Wheel",
+      "seller": "Outdoor Funland",
+      "seller_email": "info@outdoorfunland.com",
+      "subcategory": "water-toys",
+      "price": 34.99,
+      "rating": 4.1,
+      "quantity": 7,
+      "description": "The Inflatable Water Wheel is a large wheel-shaped float that allows children to roll and play on water. It provides endless fun and is suitable for use in pools or calm water bodies."
+    },
+    {
+      "id": 20,
+      "img": "https://i.ibb.co/C5CszWd/water-pad.jpg",
+      "name": "Water Sprinkler Pad",
+      "seller": "Water Wonders",
+      "seller_email": "support@waterwonders.com",
+      "subcategory": "water-toys",
+      "price": 59.99,
+      "rating": 4.9,
+      "quantity": 3,
+      "description": "The Water Sprinkler Pad is a large inflatable pad with built-in sprinklers for kids to run, jump, and splash. It provides a refreshing and safe water play area for hot summer days."
+    }
+  ]
+  

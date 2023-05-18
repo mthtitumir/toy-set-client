@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "img":"https://i.ibb.co/9bRp30n/rapid-racer-bike.jpg",
+        "name": "Rapid Racer Bike",
+        "seller": "FunToys Inc.",
+        "seller_email": "sales@funtoys.com",
+        "subcategory": "ride-on-toys",
+        "price": 89.99,
+        "rating": 4.5,
+        "quantity": 10,
+        "description": "The Rapid Racer Bike is a stylish and sturdy ride-on toy for kids. It features adjustable seat height, durable construction, and smooth wheels for a comfortable ride. Suitable for children aged 3-6 years."
+    },
+    {
+        "id": 2,
+        "img":"https://i.ibb.co/CwKdxdm/super-scooter.jpg",
+        "name": "Super Scooter Pro",
+        "seller": "Outdoor Adventures Ltd.",
+        "seller_email": "info@outdooradventures.com",
+        "subcategory": "ride-on-toys",
+        "price": 49.99,
+        "rating": 4.2,
+        "quantity": 5,
+        "description": "The Super Scooter Pro is a high-performance scooter for kids who love outdoor fun. It has a lightweight frame, adjustable handlebars, and a rear foot brake for added safety. Suitable for children aged 5 and above."
+    },
+    {
+        "id": 3,
+        "img":"https://i.ibb.co/sgVcw4Y/turbo-trike.jpg",
+        "name": "Turbo Trike",
+        "seller": "KidsZone Toys",
+        "seller_email": "sales@kidszonetoys.com",
+        "subcategory": "ride-on-toys",
+        "price": 69.99,
+        "rating": 4.8,
+        "quantity": 8,
+        "description": "The Turbo Trike is a thrilling three-wheeled ride-on toy that provides stability and excitement. It features a sturdy steel frame, wide wheels, and a comfortable seat. Suitable for children aged 2-4 years."
+    },
+    {
+        "id": 4,
+        "img":"https://i.ibb.co/Np26ZRD/electric-cruiser.jpg",
+        "name": "Electric Cruiser Car",
+        "seller": "Toyland Express",
+        "seller_email": "orders@toylandexpress.com",
+        "subcategory": "ride-on-toys",
+        "price": 249.99,
+        "rating": 4.7,
+        "quantity": 3,
+        "description": "The Electric Cruiser Car is a battery-powered ride-on car that offers a realistic driving experience for young children. It has working headlights, MP3 player connectivity, and a remote control for parental supervision. Suitable for children aged 3-6 years."
+    },
+    {
+        "id": 5,
+        "img":"https://i.ibb.co/Bw2LkqH/balance-bike.jpg",
+        "name": "Balance Bike Pro",
+        "seller": "Active Kids Sports",
+        "seller_email": "info@activekidssports.com",
+        "subcategory": "ride-on-toys",
+        "price": 79.99,
+        "rating": 4.6,
+        "quantity": 12,
+        "description": "The Balance Bike Pro is a pedal-free bike that helps children develop balance and coordination skills. It features an adjustable seat and handlebars, puncture-resistant tires, and a lightweight frame. Suitable for children aged 2-5 years."
+    },
+    {
+        "id": 6,
+        "img":"https://i.ibb.co/27B4cKw/mini-moto-atv.webp",
+        "name": "Mini Moto ATV",
+        "seller": "Outdoor Gear World",
+        "seller_email": "sales@outdoorgearworld.com",
+        "subcategory": "ride-on-toys",
+        "price": 149.99,
+        "rating": 4.4,
+        "quantity": 6,
+        "description": "The Mini Moto ATV is a mini-sized all-terrain vehicle for adventurous kids. It has a powerful electric motor, off-road tires, and a sturdy frame. Suitable for children aged 6 and above."
+    },
+    {
+        "id": 7,
+        "img":"https://i.ibb.co/NCQGVBp/pedal-go-kart.jpg",
+        "name": "Pedal Go-Kart",
+        "seller": "Adventure Toys",
+        "seller_email": "contact@adventuretoys.com",
+        "subcategory": "ride-on-toys",
+        "price": 119.99,
+        "rating": 4.3,
+        "quantity": 9,
+        "description": "The Pedal Go-Kart is a pedal-powered racing kart that offers hours of outdoor fun. It features adjustable seat position, pneumatic tires, and a hand brake for easy stopping. Suitable for children aged 4-8 years."
+    },
+    {
+        "id": 8,
+        "img":"https://i.ibb.co/XtxcnkY/convertible-tricyle.jpg",
+        "name": "Convertible Tricycle",
+        "seller": "Toys Unlimited",
+        "seller_email": "support@toysunlimited.com",
+        "subcategory": "ride-on-toys",
+        "price": 129.99,
+        "rating": 4.9,
+        "quantity": 4,
+        "description": "The Convertible Tricycle is a versatile ride-on toy that can transform from a tricycle to a balance bike. It has a sturdy frame, adjustable seat height, and non-slip handles. Suitable for children aged 1-3 years."
+    },
+    {
+        "id": 9,
+        "img":"https://i.ibb.co/sJWZhgq/glider-scooter.jpg",
+        "name": "Glider Scooter",
+        "seller": "Sports Gear Pro",
+        "seller_email": "sales@sportsgearpro.com",
+        "subcategory": "ride-on-toys",
+        "price": 59.99,
+        "rating": 4.1,
+        "quantity": 7,
+        "description": "The Glider Scooter is a fun and lightweight scooter with a unique gliding motion. It has three wheels for stability, an adjustable handlebar, and a rear foot brake. Suitable for children aged 3-6 years."
+    },
+    {
+        "id": 10,
+        "img":"https://i.ibb.co/hBNWZb3/wooden-horse.jpg",
+        "name": "Classic Wooden Rocking Horse",
+        "seller": "Wonderful Toys",
+        "seller_email": "info@wonderfultoys.com",
+        "subcategory": "ride-on-toys",
+        "price": 89.99,
+        "rating": 4.7,
+        "quantity": 2,
+        "description": "The Classic Wooden Rocking Horse is a timeless ride-on toy that brings joy to children. It is made from high-quality wood, has a comfortable seat, and sturdy handles. Suitable for children aged 2-5 years."
+    }
+]

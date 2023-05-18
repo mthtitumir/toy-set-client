@@ -1,0 +1,123 @@
+[
+    {
+      "id": 21,
+      "img": "https://i.ibb.co/wSPQq6p/rc-drone.jpg",
+      "name": "RC Drone X200",
+      "seller": "SkyHigh Toys",
+      "seller_email": "sales@skyhightoys.com",
+      "subcategory": "flying-toys",
+      "price": 99.99,
+      "rating": 4.5,
+      "quantity": 15,
+      "description": "The RC Drone X200 is a high-performance remote-controlled drone equipped with a camera for aerial photography and video recording. It has a stable flight system, long battery life, and advanced features like altitude hold and headless mode."
+    },
+    {
+      "id": 22,
+      "img": "https://i.ibb.co/HCHM0gv/glider-plane.jpg",
+      "name": "Glider Plane Elite",
+      "seller": "Outdoor Adventures Ltd.",
+      "seller_email": "info@outdooradventures.com",
+      "subcategory": "flying-toys",
+      "price": 19.99,
+      "rating": 4.2,
+      "quantity": 8,
+      "description": "The Glider Plane Elite is a classic foam glider that can soar through the air for long distances. It is easy to assemble and offers hours of outdoor flying fun for kids and adults alike."
+    },
+    {
+      "id": 23,
+      "img": "https://i.ibb.co/N7jK1XQ/rocket-launcher.jpg",
+      "name": "Rocket Launcher Set",
+      "seller": "FunTime Toys",
+      "seller_email": "sales@funtimetoys.com",
+      "subcategory": "flying-toys",
+      "price": 24.99,
+      "rating": 4.6,
+      "quantity": 12,
+      "description": "The Rocket Launcher Set is a thrilling toy that allows you to launch foam rockets into the sky. It comes with a launch pad, rockets, and a hand pump for easy launching."
+    },
+    {
+      "id": 24,
+      "img": "https://i.ibb.co/G3h62F3/flying-disk.jpg",
+      "name": "Flying Disc Pro",
+      "seller": "Toyland Express",
+      "seller_email": "orders@toylandexpress.com",
+      "subcategory": "flying-toys",
+      "price": 9.99,
+      "rating": 4.3,
+      "quantity": 20,
+      "description": "The Flying Disc Pro is a high-quality frisbee that offers excellent flight stability and durability. It is perfect for outdoor play and can be enjoyed by both beginners and advanced players."
+    },
+    {
+      "id": 25,
+      "img": "https://i.ibb.co/rGdrq6F/led-light-bumerang.jpg",
+      "name": "LED Light-Up Boomerang",
+      "seller": "Playful Pals Toys",
+      "seller_email": "info@playfulpalstoys.com",
+      "subcategory": "flying-toys",
+      "price": 12.99,
+      "rating": 4.8,
+      "quantity": 10,
+      "description": "The LED Light-Up Boomerang is a unique flying toy that features vibrant LED lights. It is designed to return to the thrower, making it an exciting and entertaining outdoor activity."
+    },
+    {
+      "id": 26,
+      "img": "https://i.ibb.co/CwLmMnK/kite.jpg",
+      "name": "Kite Adventure Set",
+      "seller": "Outdoor Gear World",
+      "seller_email": "sales@outdoorgearworld.com",
+      "subcategory": "flying-toys",
+      "price": 29.99,
+      "rating": 4.7,
+      "quantity": 5,
+      "description": "The Kite Adventure Set includes a colorful kite, string, and handles for hours of kite-flying fun. It is easy to assemble and suitable for all ages, making it a great outdoor activity for the whole family."
+    },
+    {
+      "id": 27,
+      "img": "https://i.ibb.co/bgkr39V/stunt-quadro.jpg",
+      "name": "Stunt Quadcopter X400",
+      "seller": "Tech Toys Unlimited",
+      "seller_email": "info@techtoysunlimited.com",
+      "subcategory": "flying-toys",
+      "price": 79.99,
+      "rating": 4.4,
+      "quantity": 7,
+      "description": "The Stunt Quadcopter X400 is a versatile and agile remote-controlled quadcopter that can perform impressive aerial stunts. It has a durable construction, LED lights, and multiple flight modes for a thrilling flying experience."
+    },
+    {
+      "id": 28,
+      "img": "https://i.ibb.co/FWVN2BG/foam-glider.jpg",
+      "name": "Foam Glider Rocket",
+      "seller": "Rocket Toys",
+      "seller_email": "sales@rockettoys.com",
+      "subcategory": "flying-toys",
+      "price": 14.99,
+      "rating": 4.1,
+      "quantity": 15,
+      "description": "The Foam Glider Rocket is a foam airplane toy that can be launched by hand. It is designed for high-speed flights and acrobatic maneuvers, providing endless fun for outdoor play."
+    },
+    {
+      "id": 29,
+      "img": "https://i.ibb.co/rxTRjnW/helicopter.jpg",
+      "name": "Helicopter Pilot Simulator",
+      "seller": "Flight Sim Toys",
+      "seller_email": "support@flightsimtoys.com",
+      "subcategory": "flying-toys",
+      "price": 59.99,
+      "rating": 4.9,
+      "quantity": 3,
+      "description": "The Helicopter Pilot Simulator is a realistic flight simulator that allows you to experience the thrill of flying a helicopter. It features a joystick controller, adjustable settings, and immersive graphics for an authentic flying experience."
+    },
+    {
+      "id": 30,
+      "img": "https://i.ibb.co/vJz4vgf/sling-shot.jpg",
+      "name": "Sling Shot Foam Gliders",
+      "seller": "Whiz Kids Toys",
+      "seller_email": "info@whizkidstoys.com",
+      "subcategory": "flying-toys",
+      "price": 8.99,
+      "rating": 4.3,
+      "quantity": 20,
+      "description": "The Sling Shot Foam Gliders are lightweight foam airplanes that can be launched using a sling shot mechanism. They are easy to launch and provide hours of flying fun for children."
+    }
+  ]
+  
