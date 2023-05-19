@@ -1,13 +1,66 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext);
+
+    const handleRegister = event => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        const confirmPassword = form.confirmPassword.value;
+
+        if (password !== confirmPassword) {
+            Swal.fire({
+                icon: 'error',
+                title: '',
+                text: "Password didn't match"
+            })
+            return;
+        };
+        if (password.length < 6) {
+            Swal.fire({
+                icon: 'error',
+                title: '',
+                text: "Password must be at least 6 characters!"
+            })
+            return;
+        };
+        createUser(email, password)
+            .then(result => {
+                if (result?.user) {
+                    if (result?.user) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Welcome!',
+                            text: 'Registration Successful!',
+                        })
+                    }
+                }
+            })
+            .catch(error => {
+                if (result?.user) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'OOpss!',
+                        text: 'Registration Failed!',
+                    })
+                }
+            })
+        form.reset();
+        console.log(name, email, password, confirmPassword);
+
+    }
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex">
                 <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
-                    <div className="card-body">
+                    <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
@@ -37,11 +90,9 @@ const Register = () => {
                             </label>
                         </div>
                         <div className="form-control mt-3">
-                            <button className="btn btn-primary">Register</button>
+                            <input value='Register' type='submit' className="btn btn-primary" />
                         </div>
-                    </div>
-                    <h1 className=" mb-2 font-semibold text-center text-lg">Or, continue with</h1>
-                    <SocialLogin></SocialLogin>
+                    </form>                   
                 </div>
             </div>
         </div>
