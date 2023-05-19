@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SingleRideToy = ({ rideToy }) => {
-    const { name, price, rating, img } = rideToy;
+const SingleWaterToy = ({ waterToy }) => {
+    const { name, price, rating, img } = waterToy;
     return (
         <div className='drop-shadow-xl'>
             <img src={img} alt="" />
@@ -17,4 +17,4 @@ const SingleRideToy = ({ rideToy }) => {
     );
 };
 
-export default SingleRideToy;
+export default SingleWaterToy;

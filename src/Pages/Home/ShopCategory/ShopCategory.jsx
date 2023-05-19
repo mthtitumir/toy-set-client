@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import SingleRideToy from '../SingleRideToy/SingleRideToy';
+import SingleRideToy from '../SingleToy/SingleRideToy';
+import SingleWaterToy from '../SingleToy/SingleWaterToy';
+import SingleFlyingToy from '../SingleToy/SingleFlyingToy';
 
 const ShopCategory = () => {
     const [rideToys, setRideToys] = useState([]);
@@ -36,19 +38,30 @@ const ShopCategory = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
                             {
-                                rideToys.map(rideToy => <SingleRideToy key={rideToy.id} rideToy></SingleRideToy>)
+                                rideToys.slice(0, 6).map(rideToy => <SingleRideToy key={rideToy.id} rideToy={rideToy}></SingleRideToy>)
                             }
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <h2>Any content 2</h2>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+                            {
+                                waterToys.slice(0, 6).map(waterToy => <SingleWaterToy key={waterToy.id} waterToy={waterToy}></SingleWaterToy>)
+                            }
+                        </div>
                     </TabPanel>
                     <TabPanel>
-                        <h2>Any content 3</h2>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+                            {
+                                flyingToys.slice(0, 6).map(flyingToy => <SingleFlyingToy key={flyingToy.id} flyingToy={flyingToy}></SingleFlyingToy>)
+                            }
+                        </div>
                     </TabPanel>
                 </Tabs>
+                <div className='text-center'>
+                    <button className='text-3xl px-4 py-2 rounded-lg border mt-5 text-sky-900 hover:bg-sky-900 hover:text-white text-center mb-10'>See More</button>
+                </div>
             </div>
         </div>
     );
