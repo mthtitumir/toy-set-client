@@ -3,11 +3,13 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 import Swal from 'sweetalert2';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { FaGoogle } from 'react-icons/fa';
+import app from '../../../firebase/firebase.init';
 
 const Login = () => {
-    const { user, signIn, auth } = useContext(AuthContext);
+    const { user, signIn } = useContext(AuthContext);
+    const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
 
     const handleLogin = event => {
