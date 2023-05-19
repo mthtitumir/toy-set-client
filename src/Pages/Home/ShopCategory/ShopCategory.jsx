@@ -38,21 +38,21 @@ const ShopCategory = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
                             {
                                 rideToys.slice(0, 6).map(rideToy => <SingleRideToy key={rideToy.id} rideToy={rideToy}></SingleRideToy>)
                             }
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
                             {
                                 waterToys.slice(0, 6).map(waterToy => <SingleWaterToy key={waterToy.id} waterToy={waterToy}></SingleWaterToy>)
                             }
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
                             {
                                 flyingToys.slice(0, 6).map(flyingToy => <SingleFlyingToy key={flyingToy.id} flyingToy={flyingToy}></SingleFlyingToy>)
                             }

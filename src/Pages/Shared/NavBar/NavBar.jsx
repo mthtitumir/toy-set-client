@@ -15,7 +15,7 @@ const NavBar = () => {
                             <li><Link>All Toys</Link></li>
                             <li><Link>My Toys</Link></li>
                             <li><Link to='/add-a-toy'>Add a Toy</Link></li>
-                            <li><Link>Blog</Link></li>
+                            <li><Link to='/blogs'>Blog</Link></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost normal-case text-xl text-gray-700">ToySet</a>
@@ -26,7 +26,7 @@ const NavBar = () => {
                         <li><Link>All Toys</Link></li>
                         <li><Link>My Toys</Link></li>
                         <li><Link to='/add-a-toy'>Add a Toy</Link></li>
-                        <li><Link>Blog</Link></li>
+                        <li><Link to='/blogs'>Blog</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
