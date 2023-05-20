@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 import Swal from 'sweetalert2';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
@@ -9,6 +9,10 @@ import app from '../../../firebase/firebase.init';
 
 const Login = () => {
     const { user, signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
 
@@ -21,6 +25,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 if (result?.user) {
+                    navigate(from, {replace: true})
                     Swal.fire({
                         icon: 'success',
                         title: 'Welcome!',
@@ -41,6 +46,7 @@ const Login = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const loggedUser = result.user;
+                navigate(from, {replace: true})
                 console.log(loggedUser);
             })
             .catch(error => {
