@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import ToyTable from './ToyTable';
 import { AuthContext } from '../../provider/AuthProvider';
 import { InfinitySpin } from 'react-loader-spinner';
+import { Helmet } from 'react-helmet';
 
 const AllToys = () => {
     const { loading, setLoading } = useContext(AuthContext);
@@ -15,7 +16,7 @@ const AllToys = () => {
                 setToys(data)
                 setLoading(false)
             }
-        )
+            )
 
     })
     // console.log(toys);
@@ -40,6 +41,10 @@ const AllToys = () => {
 
     return (
         <div className='container mx-auto'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ToySet | All Toy</title>
+            </Helmet>
             <form onSubmit={handleSearchToys} className='mt-5 flex justify-center gap-2'>
                 <input type="text" className='text-center' name='search' placeholder='Search toys' />
                 <input className='hover:bg-sky-500 font-semibold uppercase' value='Search' type="submit" />

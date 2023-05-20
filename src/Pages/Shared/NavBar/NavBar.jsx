@@ -50,7 +50,7 @@ const NavBar = () => {
                         <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img title={user.displayName ? user.displayName : 'Profile'} src={user.photoURL ? user.photoURL : 'https://i.ibb.co/Bw2LkqH/balance-bike.jpg'} />
+                                    <img title={user.displayName ? user.displayName : 'Profile'} src={user.photoURL ? user.photoURL : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'} />
                                 </div>
                             </label>
                             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">

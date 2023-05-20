@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
-import SocialLogin from '../SocialLogin/SocialLogin';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 import Swal from 'sweetalert2';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { FaGoogle } from 'react-icons/fa';
 import app from '../../../firebase/firebase.init';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const { user, signIn } = useContext(AuthContext);
@@ -55,6 +55,10 @@ const Login = () => {
     }
     return (
         <div className="hero min-h-screen bg-base-200">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ToySet | Login</title>
+            </Helmet>
             <div className="hero-content flex">
                 <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin} className="card-body">

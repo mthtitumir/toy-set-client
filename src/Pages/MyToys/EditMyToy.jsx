@@ -1,15 +1,17 @@
 import React from 'react';
-import { useForm } from "react-hook-form";
-import './AddAToy.css'
-import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet';
+import { useForm } from "react-hook-form";
+import { useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
-const AddAToy = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+const EditMyToy = () => {
+    const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
+    const { id } = useParams();
+    console.log(id);
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5500/toys', {
-            method: 'POST',
+        fetch(`http://localhost:5500/toys/update-toy/${id}`, {
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -18,7 +20,7 @@ const AddAToy = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if (data?.insertedId) {
+                if (data?.modifiedCount) {
                     Swal.fire(
                         'Toy Added',
                         'You Added a New Toy!',
@@ -34,11 +36,11 @@ const AddAToy = () => {
         <div className='container mx-auto'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>ToySet | Add a Toy</title>
+                <title>ToySet | Edit your Toy</title>
             </Helmet>
             {/* hook form   */}
             <div className='bg-sky-300 rounded-xl shadow-2xl w-full lg:w-1/2  mt-20 py-10 mx-auto'>
-                <h2 className='text-3xl text-sky-900 font-semibold text-center mb-7'>Add a Toy</h2>
+                <h2 className='text-3xl text-sky-900 font-semibold text-center mb-7'>Edit Toy</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex gap-5 justify-center'>
                         <input placeholder='Product Id'{...register("id")} />
@@ -72,4 +74,4 @@ const AddAToy = () => {
     );
 };
 
-export default AddAToy;
+export default EditMyToy;

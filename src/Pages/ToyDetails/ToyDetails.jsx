@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom';
 
 const ToyDetails = () => {
@@ -6,6 +7,10 @@ const ToyDetails = () => {
     const { _id, name, seller, seller_email, img, subcategory, price, rating, quantity, description } = toy;
     return (
         <div className='mt-20 container mx-auto'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ToySet | Details</title>
+            </Helmet>
             <div className='grid md:grid-cols-2 p-3 gap-5 w-3/4 mx-auto'>
                 <div>
                     <img src={img} alt="" />

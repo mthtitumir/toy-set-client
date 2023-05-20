@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SingleBlog from './SingleBlog';
 import { InfinitySpin } from 'react-loader-spinner';
 import { AuthContext } from '../../provider/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -17,6 +18,10 @@ const Blogs = () => {
     }, [])
     return (
         <div className='container mx-auto mt-10'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ToySet | Blogs</title>
+            </Helmet>
             <h2 className='text-5xl text-sky-900 font-semibold text-center mb-10'>Blogs</h2>
             <button className='border px-3 py-2'><Link to='/add-a-blog'>Add a Blog</Link></button>
             {

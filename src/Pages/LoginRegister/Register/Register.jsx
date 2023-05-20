@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import SocialLogin from '../SocialLogin/SocialLogin';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../../provider/AuthProvider';
 
@@ -58,6 +57,10 @@ const Register = () => {
     }
     return (
         <div className="hero min-h-screen bg-base-200">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ToySet | Register</title>
+            </Helmet>
             <div className="hero-content flex">
                 <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleRegister} className="card-body">
