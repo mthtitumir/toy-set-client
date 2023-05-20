@@ -1,27 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ToyTable from './ToyTable';
+import { AuthContext } from '../../provider/AuthProvider';
+import { InfinitySpin } from 'react-loader-spinner';
 
 const AllToys = () => {
+    const { loading, setLoading } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     const [query, setQuery] = useState('');
-    useEffect(()=>{
+    useEffect(() => {
         fetch('http://localhost:5500/toys')
-        .then(res => res.json())
-        .then(data => setToys(data))
+            .then(res => res.json())
+            .then(data => {
+                setToys(data)
+                setLoading(false)
+            }
+        )
+
     })
     // console.log(toys);
-    const handleSearchToys = event =>{
+    const handleSearchToys = event => {
         event.preventDefault();
         const searchQ = event.target.search.value;
         setQuery(searchQ);
-        const filteredData = toys.filter(item =>{
-             item.name.toLowerCase() == query.toLowerCase();
+        const filteredData = toys.filter(item => {
+            return item.name.toLowerCase().includes(query.toLowerCase());
         })
         setToys(filteredData);
         console.log(filteredData);
     }
-    
+    if (loading) {
+        return <div className='flex items-center justify-center my-8'>
+            <InfinitySpin
+                width='200'
+                color="#4fa94d"
+            />
+        </div>;
+    }
+
     return (
         <div className='container mx-auto'>
             <form onSubmit={handleSearchToys} className='mt-5 flex justify-center gap-2'>

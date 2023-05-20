@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const SingleWaterToy = ({ waterToy }) => {
-    const { name, price, rating, img } = waterToy;
+    const {user} = useContext(AuthContext);
+    const { _id, name, price, rating, img } = waterToy;
+    const handleViewDetails = () => {
+        if (!user) {
+            Swal.fire({
+                title: 'Please Login?',
+                text: "You have to log in first to view details",
+                icon: 'warning',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, Proceed!'
+            }).then()
+        }
+    }
     return (
         <div className='drop-shadow-xl'>
             <img src={img} alt="" />
@@ -12,7 +27,7 @@ const SingleWaterToy = ({ waterToy }) => {
                     <p>Rating: {rating} Stars</p>
                 </div>
             </div>
-            <button className='bg-sky-800 w-full py-3 text-white text-2xl rounded bottom-0'>View Details</button>
+            <Link to={`/toys/${_id}`}><button onClick={handleViewDetails} className='bg-sky-800 w-full py-3 text-white text-2xl rounded bottom-0'>View Details</button></Link>
         </div>
     );
 };
