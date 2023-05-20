@@ -30,8 +30,8 @@ const WhySpecial = () => {
                     <progress className="progress progress-primary w-full" value="95" max="100"></progress>
                 </div>
                 <div className='mt-5 flex gap-6'>
-                    <button className='border px-3 py-2 rounded-lg bg-cyan-500 text-white uppercase font-semibold'>See More</button>
-                    <button className='border px-3 py-2 rounded-lg bg-cyan-500 text-white uppercase font-semibold'>contact us</button>
+                    <button className='border px-3 py-2 rounded-lg bg-cyan-700 hover:bg-cyan-600 text-white uppercase font-semibold'>See More</button>
+                    <button className='border px-3 py-2 rounded-lg bg-cyan-700 hover:bg-cyan-600 text-white uppercase font-semibold'>contact us</button>
                 </div>
             </div>
         </div>

@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleRideToy = ({ rideToy }) => {
-    const { name, price, rating, img } = rideToy;
+    const { _id, name, price, rating, img } = rideToy;
     return (
         <div className='drop-shadow-xl'>
             <img src={img} alt="" />
@@ -12,9 +13,10 @@ const SingleRideToy = ({ rideToy }) => {
                     <p>Rating: {rating} Stars</p>
                 </div>
             </div>
-            <button className='bg-sky-800 w-full py-3 text-white text-2xl rounded bottom-0'>View Details</button>
+            <Link to={`/toys/${_id}`}><button className='bg-sky-800 w-full py-3 text-white text-2xl rounded bottom-0'>View Details</button></Link>
         </div>
     );
 };
 
 export default SingleRideToy;
+// http://localhost:5500/toys/${_id}
