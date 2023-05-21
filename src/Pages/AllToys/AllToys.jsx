@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import ToyTable from './ToyTable';
 import { AuthContext } from '../../provider/AuthProvider';
 import { InfinitySpin } from 'react-loader-spinner';
@@ -8,7 +7,7 @@ import { Helmet } from 'react-helmet';
 const AllToys = () => {
     const { loading, setLoading } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
-    const [query, setQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState('');
     useEffect(() => {
         fetch('https://toy-set-server.vercel.app/toys')
             .then(res => res.json())
@@ -18,17 +17,14 @@ const AllToys = () => {
             }
             )
 
-    })
+    }, [])
     // console.log(toys);
-    const handleSearchToys = event => {
-        event.preventDefault();
-        const searchQ = event.target.search.value;
-        setQuery(searchQ);
-        const filteredData = toys.filter(item => {
-            return item.name.toLowerCase().includes(query.toLowerCase());
-        })
-        setToys(filteredData);
-        console.log(filteredData);
+    const handleSearchButtonClick = () => {
+        const filteredToys = toys.filter(toy =>
+            toy.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        setToys(filteredToys);
+        // setLoading(false);
     }
     if (loading) {
         return <div className='flex items-center justify-center my-8'>
@@ -45,10 +41,16 @@ const AllToys = () => {
                 <meta charSet="utf-8" />
                 <title>ToySet | All Toy</title>
             </Helmet>
-            <form onSubmit={handleSearchToys} className='mt-5 flex justify-center gap-2'>
-                <input type="text" className='text-center' name='search' placeholder='Search toys' />
-                <input className='hover:bg-sky-500 font-semibold uppercase' value='Search' type="submit" />
-            </form>
+            <div className='mt-5 flex justify-center gap-2'>
+                <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={event => setSearchQuery(event.target.value)}
+                    placeholder="Search by Toy Name"
+                />
+                <input onClick={handleSearchButtonClick} className='hover:bg-sky-500 font-semibold uppercase' value='Search' type="submit" />
+
+            </div>
             <div className="overflow-x-auto mt-5">
                 <table className="table table-compact w-full">
                     <thead>

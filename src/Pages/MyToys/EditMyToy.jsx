@@ -22,8 +22,8 @@ const EditMyToy = () => {
                 console.log(data);
                 if (data?.modifiedCount) {
                     Swal.fire(
-                        'Toy Added',
-                        'You Added a New Toy!',
+                        'Toy Updated',
+                        'You Updated the Toy!',
                         'success'
                     )
                     reset();
