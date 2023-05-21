@@ -3,21 +3,23 @@ import { AuthContext } from '../../provider/AuthProvider';
 import MyToyrow from './MyToyrow';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet';
+import { NavLink } from 'react-router-dom';
+
 
 const MyToys = () => {
     const [myToys, setMyToys] = useState([]);
     const [control, setControl] = useState(false);
-
+    const [sortOrder, setSortOrder] = useState('ascending');
     const { user } = useContext(AuthContext);
     const { email, photoURL } = user;
-
-    console.log(user);
+    console.log(sortOrder);
+    // console.log(user);
     useEffect(() => {
-        fetch(`https://toy-set-server.vercel.app/toys?seller_email=${email}`)
+        fetch(`https://toy-set-server.vercel.app/toys?seller_email=${email}&sort=${sortOrder}`)
             .then(res => res.json())
             .then(data => setMyToys(data))
             .catch(error => console.log(error))
-    }, [control])
+    }, [control, sortOrder])
     const handleDelete = (id) => {
         console.log(id);
         Swal.fire({
@@ -49,7 +51,14 @@ const MyToys = () => {
             }
         })
     }
-    console.log(myToys[0]?.seller);
+    const handleAscending = () => {
+        setSortOrder('ascending');
+    }
+    const handleDescending = () => {
+        setSortOrder('descending')
+    }
+    // console.log(myToys[0]?.seller);
+
     return (
         <div className='mt-20 container mx-auto rounded-lg'>
             <Helmet>
@@ -66,6 +75,10 @@ const MyToys = () => {
                 </div>
                 <div>
                     <h2 className='text-3xl font-semibold text-center m-5'>Your Products List</h2>
+                </div>
+                <div className='flex gap-3 justify-center'>
+                    <NavLink><button onClick={handleAscending} className='border px-3 py-1'>Price-Ascending</button></NavLink>
+                    <NavLink><button onClick={handleDescending} className='border px-3 py-1'>Price-descending</button> </NavLink>
                 </div>
             </div>
             <div className='my-8'>

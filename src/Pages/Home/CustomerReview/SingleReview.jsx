@@ -16,7 +16,7 @@ const SingleReview = () => {
 
     return (
         <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div className="card w-full ">
+            <div className="card w-full p-5 md:p-1">
                 <figure className='rounded-[50%] border hover:shadow-xl p-3 w-2/5 mx-auto'><img src="https://i.ibb.co/Np26ZRD/electric-cruiser.jpg" alt="Shoes" /></figure>
                 <div className="card-body text-center bg-base-100 shadow-xl rounded-lg">
                     <h2 className="font-semibold text-center text-3xl">Mr Rakib</h2>

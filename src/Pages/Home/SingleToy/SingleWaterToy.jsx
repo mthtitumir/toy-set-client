@@ -18,7 +18,7 @@ const SingleWaterToy = ({ waterToy }) => {
         }
     }
     return (
-        <div className='drop-shadow-xl'>
+        <div className='drop-shadow-xl p-5 md:p-1'>
             <img src={img} alt="" />
             <div className='mt-3 p-3'>
                 <h6 className='text-3xl font-semibold'>{name}</h6>

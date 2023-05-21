@@ -51,6 +51,10 @@ const AllToys = () => {
                 <input onClick={handleSearchButtonClick} className='hover:bg-sky-500 font-semibold uppercase' value='Search' type="submit" />
 
             </div>
+            <div className='flex gap-10'>
+                <button className='btn btn-ghost'>Sort Ascending</button>
+                <button className='btn btn-ghost'>Sort Ascending</button>
+            </div>
             <div className="overflow-x-auto mt-5">
                 <table className="table table-compact w-full">
                     <thead>

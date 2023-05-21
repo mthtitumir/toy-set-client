@@ -16,9 +16,9 @@ const PhotoGallery = () => {
     return (
         <div className='mt-20'>
             <h2 className='text-5xl text-sky-900 font-semibold text-center mb-10'>Sports Gallery</h2>
-            <div>
+            <div className='p-5 md:p-1'>
                 <div data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                    <Gallery className='border' photos={photos} direction={"column"} />
+                    <Gallery className='' photos={photos} direction={"column"} />
                 </div>
             </div>
         </div>

@@ -11,8 +11,8 @@ const Banner = () => {
                 {/* text over banner image */}
                 <div className="absolute h-full flex items-center w-4/5 bg-gradient-to-r from-cyan-800 to-[rgba(21, 21, 21, 0)] pl-10">
                     <div className='text-white space-y-5'>
-                        <h2 className='text-7xl w-2/3 font-bold '>Best Outdoor Toys for Active Kids!</h2>
-                        <p className='text-lg w-2/3 '>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
+                        <h2 className='text-4xl md:text-7xl md:w-2/3 font-bold '>Best Outdoor Toys for Active Kids!</h2>
+                        <p className='text-lg md:w-2/3 '>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
                             <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
@@ -30,8 +30,8 @@ const Banner = () => {
                 {/* text over banner image */}
                 <div className="absolute h-full flex items-center w-4/5 bg-gradient-to-r from-cyan-800 to-[rgba(21, 21, 21, 0)] pl-10">
                     <div className='text-white space-y-5'>
-                        <h2 className='text-7xl w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
-                        <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
+                        <h2 className='text-4xl md:text-7xl md:w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
+                        <p className='text-lg md:w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
                             <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
@@ -49,8 +49,8 @@ const Banner = () => {
                 {/* text over banner image */}
                 <div className="absolute h-full flex items-center w-4/5 bg-gradient-to-r from-cyan-800 to-[rgba(21, 21, 21, 0)] pl-10">
                     <div className='text-white space-y-5'>
-                        <h2 className='text-7xl w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
-                        <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
+                        <h2 className='text-4xl md:text-7xl md:w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
+                        <p className='text-lg md:w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
                             <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
@@ -68,8 +68,8 @@ const Banner = () => {
                 {/* text over banner image */}
                 <div className="absolute h-full flex items-center w-4/5 bg-gradient-to-r from-cyan-800 to-[rgba(21, 21, 21, 0)] pl-10">
                     <div className='text-white space-y-5'>
-                        <h2 className='text-7xl w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
-                        <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
+                        <h2 className='text-4xl md:text-7xl md:w-2/3 font-bold '>Unleash the Joy of Outdoors!</h2>
+                        <p className='text-lg md:w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
                             <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
