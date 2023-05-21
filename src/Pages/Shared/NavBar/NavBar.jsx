@@ -19,8 +19,8 @@ const NavBar = () => {
             })
     }
     return (
-        <div className='bg-sky-300'>
-            <div className="navbar bg-sky-300 container mx-auto">
+        <div className='bg-sky-400'>
+            <div className="navbar bg-sky-400 container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,11 +38,11 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/all-toys'>All Toys</Link></li>
-                        <li><Link to='/my-toys'>My Toys</Link></li>
-                        <li><Link to='/add-a-toy'>Add a Toy</Link></li>
-                        <li><Link to='/blogs'>Blog</Link></li>
+                        <li className='font-semibold'><Link to='/'>Home</Link></li>
+                        <li className='font-semibold'><Link to='/all-toys'>All Toys</Link></li>
+                        <li className='font-semibold'><Link to='/my-toys'>My Toys</Link></li>
+                        <li className='font-semibold'><Link to='/add-a-toy'>Add a Toy</Link></li>
+                        <li className='font-semibold'><Link to='/blogs'>Blog</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Swal from 'sweetalert2';
 
 const AddABlog = () => {
@@ -12,11 +13,11 @@ const AddABlog = () => {
         // console.log(title, author, photo, description);
         const blog = {
             title,
-            author, 
+            author,
             photo,
             description
         }
-        fetch('http://localhost:5500/blogs', {
+        fetch('https://toy-set-server.vercel.app/blogs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

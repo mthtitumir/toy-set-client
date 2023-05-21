@@ -13,7 +13,7 @@ const MyToys = () => {
 
     console.log(user);
     useEffect(() => {
-        fetch(`http://localhost:5500/toys?seller_email=${email}`)
+        fetch(`https://toy-set-server.vercel.app/toys?seller_email=${email}`)
             .then(res => res.json())
             .then(data => setMyToys(data))
             .catch(error => console.log(error))
@@ -30,7 +30,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5500/toys/${id}`, {
+                fetch(`https://toy-set-server.vercel.app/toys/${id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())

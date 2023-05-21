@@ -7,10 +7,10 @@ import Swal from 'sweetalert2';
 const EditMyToy = () => {
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const { id } = useParams();
-    console.log(id);
+    // console.log(id);
     const onSubmit = data => {
         console.log(data)
-        fetch(`http://localhost:5500/toys/update-toy/${id}`, {
+        fetch(`https://toy-set-server.vercel.app/toys/update-toy/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

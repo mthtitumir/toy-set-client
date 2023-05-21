@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import { AuthContext } from '../../../provider/AuthProvider';
 
 const SingleRideToy = ({ rideToy }) => {
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const { _id, name, price, rating, img } = rideToy;
     const handleViewDetails = () => {
         if (!user) {
@@ -33,4 +33,4 @@ const SingleRideToy = ({ rideToy }) => {
 };
 
 export default SingleRideToy;
-// http://localhost:5500/toys/${_id}
+// https://toy-set-server.vercel.app/toys/${_id}

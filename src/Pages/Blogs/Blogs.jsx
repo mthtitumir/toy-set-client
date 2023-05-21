@@ -9,7 +9,7 @@ const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const { loading, setLoading } = useContext(AuthContext);
     useEffect(() => {
-        fetch('http://localhost:5500/blogs')
+        fetch('https://toy-set-server.vercel.app/blogs')
             .then(res => res.json())
             .then(data => {
                 setBlogs(data)

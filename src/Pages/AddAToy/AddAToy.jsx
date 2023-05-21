@@ -5,10 +5,10 @@ import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet';
 
 const AddAToy = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5500/toys', {
+        fetch('https://toy-set-server.vercel.app/toys', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

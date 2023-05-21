@@ -9,9 +9,9 @@ const ShopCategory = () => {
     const [rideToys, setRideToys] = useState([]);
     const [waterToys, setWaterToys] = useState([]);
     const [flyingToys, setFlyingToys] = useState([]);
-    const url1 = 'http://localhost:5500/toys?subcategory=ride-on-toys';
-    const url2 = 'http://localhost:5500/toys?subcategory=water-toys';
-    const url3 = 'http://localhost:5500/toys?subcategory=flying-toys';
+    const url1 = 'https://toy-set-server.vercel.app/toys?subcategory=ride-on-toys';
+    const url2 = 'https://toy-set-server.vercel.app/toys?subcategory=water-toys';
+    const url3 = 'https://toy-set-server.vercel.app/toys?subcategory=flying-toys';
     useEffect(() => {
         fetch(url1).then(res => res.json()).then(data => setRideToys(data))
     }, [])
