@@ -15,7 +15,7 @@ const Banner = () => {
                         <p className='text-lg w-2/3 '>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
-                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">About Us</button>
+                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Banner = () => {
                         <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
-                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">About Us</button>
+                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Banner = () => {
                         <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
-                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">About Us</button>
+                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Banner = () => {
                         <p className='text-lg w-2/3'>Ignite Adventure and Fun with Our Exciting Outdoor Toys! Experience Endless Playtime with our Outdoor Toys for Active Kids!</p>
                         <div className='flex gap-4'>
                             <button className="bg-cyan-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Read More</button>
-                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">About Us</button>
+                            <button className="bg-red-500 py-2 px-3 rounded-lg text-white uppercase font-semibold text-sm">Shop Now</button>
                         </div>
                     </div>
                 </div>

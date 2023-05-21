@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 import Swal from 'sweetalert2';
+import logo from '../../../assets/logo/T.png'
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -34,15 +35,18 @@ const NavBar = () => {
                             <li><Link to='/blogs'>Blog</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl text-gray-700">ToySet</a>
+                    <div className='flex items-center'>
+                        <img className='w-10 rounded-[50%]' src={logo} alt="" />
+                        <a className="btn btn-ghost normal-case text-xl text-gray-700">ToySet</a>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li className='font-semibold'><Link to='/'>Home</Link></li>
-                        <li className='font-semibold'><Link to='/all-toys'>All Toys</Link></li>
-                        <li className='font-semibold'><Link to='/my-toys'>My Toys</Link></li>
-                        <li className='font-semibold'><Link to='/add-a-toy'>Add a Toy</Link></li>
-                        <li className='font-semibold'><Link to='/blogs'>Blog</Link></li>
+                        <li className='font-semibold text-gray-700'><Link to='/'>Home</Link></li>
+                        <li className='font-semibold text-gray-700'><Link to='/all-toys'>All Toys</Link></li>
+                        <li className='font-semibold text-gray-700'><Link to='/my-toys'>My Toys</Link></li>
+                        <li className='font-semibold text-gray-700'><Link to='/add-a-toy'>Add a Toy</Link></li>
+                        <li className='font-semibold text-gray-700'><Link to='/blogs'>Blog</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
